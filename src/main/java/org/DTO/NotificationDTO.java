@@ -7,7 +7,7 @@ import java.util.UUID;
 @Data
 public class NotificationDTO {
     private UUID uuid;
-    private NotificationType type;
+    private String type;
     private Sender sender;
     private Receiver receiver;
     private Notice notice;
@@ -35,9 +35,5 @@ public class NotificationDTO {
     public static class Content {
         private String fileName;
         private String data;
-    }
-
-    public enum NotificationType {
-        SMS, EMAIL, PUSH
     }
 }
