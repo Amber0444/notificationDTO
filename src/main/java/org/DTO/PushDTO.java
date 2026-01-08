@@ -1,7 +1,9 @@
 package org.DTO;
 
+import lombok.Data;
 import java.util.Map;
 
+@Data
 public class PushDTO {
     private String endpoint;
     private String publicKey;
